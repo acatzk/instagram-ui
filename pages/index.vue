@@ -1,27 +1,37 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        nuxt-template-tailwind
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div class="container mx-auto max-w-5xl px-0 sm:px-5 h-screen min-h-screen flex flex-row">
+    <div class="flex flex-row flex-grow overflow-hidden">
+      <div class="flex-grow py-0.5 sm:py-7">
+        <div class="border border-gray-200 bg-white px-4 py-3 rounded-sm">
+          <a href="#">
+            romnic
+          </a>
+        </div>
+      </div>
+      <div class="w-96 flex-none hidden md:block px-6 mt-8">
+        <div class="flex items-center justify-between py-4">
+          <div class="flex items-center space-x-4">
+            <div class="flex-shrink-0">
+              <a href="#">
+                <img class="w-14 h-14 rounded-full border" src="https://instagram.fdvo1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/41671377_475898572909086_6073809876599963648_n.jpg?_nc_ht=instagram.fdvo1-1.fna.fbcdn.net&_nc_ohc=5w6Oz_NosAMAX9R3tdQ&tp=1&oh=edc3b0706a0561c85f415c07e51bf5c0&oe=6033D860" alt="avatar">
+              </a>
+            </div>
+            <div class="flex flex-col">
+              <a href="#" class="text-sm font-semibold">h.moves</a>
+              <span class="text-sm text-gray-400">Hokage Moves</span>
+            </div>
+          </div>
+          <a href="#" class="text-xs font-medium text-blue-500">Switch</a>
+        </div>
+        <div class="flex items-center justify-between">
+          <span class="text-sm font-semibold text-gray-400">Suggestions For You</span>
+          <a href="#" class="text-sm font-medium tracking-tight">See all</a>
+        </div>
+        <ul>
+          <li v-for="(user, i) in users" :key="i">
+            <PopularUser :user="user"/>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -30,48 +40,40 @@
 <script>
   export default {
     head: {
-      title: 'Nuxt Boilerplate'
+      title: 'Instagram'
+    },
+    components: {
+      PopularUser: () => import('~/components/PopularUser')
+    },
+    data () {
+      return {
+        users: [
+          {
+            avatar: 'https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200',
+            username: 'nylarimt'
+          },
+          {
+            avatar: 'https://uifaces.co/our-content/donated/vIqzOHXj.jpg',
+            username: 'vnthony.leodones',
+            description: 'Popular'
+          },
+          {
+            avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_d3SP2vKOeGFVESn5rk6xnPiQ0naW2e-ldA&usqp=CAU',
+            username: 'abhiandniyu',
+            description: 'Popular'
+          },
+          {
+            avatar: 'https://dt2sdf0db8zob.cloudfront.net/wp-content/uploads/2019/12/9-Best-Online-Avatars-and-How-to-Make-Your-Own-for-Free-image1-5.png',
+            username: 'rrich05',
+            description: 'Suggested for you'
+          },
+          {
+            avatar: 'https://leadslive.io/wp-content/uploads/2017/05/Miniclip-8-Ball-Pool-Avatar-11.png',
+            username: 'hey.itsnahmae',
+            description: 'Suggested for you'
+          }
+        ]
+      }
     }
   }
 </script>
-
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
