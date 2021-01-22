@@ -2,9 +2,7 @@
   <div class="flex items-center justify-between py-2">
     <div class="flex items-center space-x-2">
       <div class="flex-shrink-0">
-        <a href="#">
-          <img class="w-8 h-8 rounded-full border" :src="user.avatar" alt="avatar">
-        </a>
+        <Avatar :story="user.story" :src="user.avatar" className="w-7 h-7 rounded-full border" />
       </div>
       <div class="flex flex-col">
         <a href="#" class="text-sm font-semibold">{{ user.username }}</a>
@@ -17,6 +15,9 @@
 
 <script>
   export default {
+    components: {
+      Avatar: () => import('./Avatar')
+    },
     props: {
       user: {
         type: Object,
