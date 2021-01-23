@@ -1,14 +1,25 @@
 <template>
-  <div class="container mx-auto max-w-5xl px-0 sm:px-5 h-screen min-h-screen flex flex-row">
-    <div class="flex flex-row flex-grow overflow-hidden">
-      <div class="flex-grow py-0.5 sm:py-7">
-        <div class="border border-gray-200 bg-white px-4 py-3 rounded-sm">
-          <a href="#">
-            romnic
-          </a>
+  <div class="container mx-auto max-w-5xl px-0 sm:px-5 flex flex-row z-10">
+    <div class="flex justify-center flex-row flex-1">
+
+      <div class="w-screen sm:w-156 py-0.5 sm:py-7 overflow-x-auto">
+        <div class="border border-gray-200 bg-white px-5 py-4 rounded-sm">
+          <perfect-scrollbar>
+            <ul class="inline-flex space-x-4">
+              <li v-for="(story, i) in stories" :key="i" class="flex flex-col items-center space-y-0.5">
+                <div class="p-0.5 rounded-full bg-gradient-to-tr from-yellow-400 to-fuchsia-600">
+                  <a href="#" class="block rounded-full bg-white p-0.5 flex-shrink-0 w-14">
+                    <img class="h-14 w-14 rounded-full" :src="story.avatar" alt="avatar" />
+                  </a>
+                </div>
+                <a href="#" class="text-xs font-normal text-gray-800 tracking-tight">{{ story.username }}</a>
+              </li>
+            </ul>
+          </perfect-scrollbar>
         </div>
       </div>
-      <div class="w-96 flex-none hidden md:block px-6 mt-8">
+
+      <div class="flex-grow hidden lg:block px-6 mt-8">
         <div class="flex items-center justify-between py-4">
           <div class="flex items-center space-x-4">
             <div class="flex-shrink-0">
@@ -26,11 +37,12 @@
           <a href="#" class="text-sm font-medium tracking-tight">See all</a>
         </div>
         <ul>
-          <li v-for="(user, i) in users" :key="i">
+          <li v-for="(user, i) in suggested" :key="i">
             <PopularUser :user="user"/>
           </li>
         </ul>
       </div>
+
     </div>
   </div>
 </template>
@@ -46,7 +58,61 @@
     },
     data () {
       return {
-        users: [
+        stories: [
+          {
+            avatar: 'https://uifaces.co/our-content/donated/vIqzOHXj.jpg',
+            username: 'bigbro23'
+          },
+          {
+            avatar: 'https://manskkp.lv/assets/images/users/4.jpg',
+            username: 'sister27'
+          },
+          {
+            avatar: 'https://cdn.vox-cdn.com/thumbor/Zz5I08Bvcjs9j_AbBK_L4ZoWnbE=/1400x0/filters:no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/19216619/000024.jpg',
+            username: 'abegail23'
+          },
+          {
+            avatar: 'https://pbs.twimg.com/profile_images/1001332003474567169/vDCiE04W_400x400.jpg',
+            username: 'laisa2'
+          },
+          {
+            avatar: 'https://manskkp.lv/assets/images/users/6.jpg',
+            username: 'georgy23'
+          },
+          {
+            avatar: 'https://lokjat.com/wp-content/uploads/2015/03/team-member-5.jpg',
+            username: 'nerby'
+          },
+          {
+            avatar: 'https://bootstrap.gallery/everest-v3//img/user1.jpg',
+            username: 'blackbeard'
+          },
+          {
+            avatar: 'https://qph.fs.quoracdn.net/main-qimg-6291c3a117fc230c82785148baef7eed',
+            username: 'gayle2'
+          },
+          {
+            avatar: 'https://pbs.twimg.com/profile_images/1001332003474567169/vDCiE04W_400x400.jpg',
+            username: 'laisa2'
+          },
+          {
+            avatar: 'https://manskkp.lv/assets/images/users/6.jpg',
+            username: 'georgy23'
+          },
+          {
+            avatar: 'https://lokjat.com/wp-content/uploads/2015/03/team-member-5.jpg',
+            username: 'nerby'
+          },
+          {
+            avatar: 'https://bootstrap.gallery/everest-v3//img/user1.jpg',
+            username: 'blackbeard'
+          },
+          {
+            avatar: 'https://qph.fs.quoracdn.net/main-qimg-6291c3a117fc230c82785148baef7eed',
+            username: 'gayle2'
+          }
+        ],
+        suggested: [
           {
             avatar: 'https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200',
             username: 'nylarimt',
