@@ -13,6 +13,9 @@ module.exports = {
     extend: {
       colors: {
         fuchsia: colors.fuchsia
+      },
+      width: {
+        '156': '625px'
       }
     },
   },
