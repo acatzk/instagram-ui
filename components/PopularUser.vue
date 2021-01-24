@@ -2,7 +2,7 @@
   <div class="flex items-center justify-between py-2">
     <div class="flex items-center space-x-2">
       <div class="flex-shrink-0">
-        <Avatar :story="user.story" :src="user.avatar" className="w-7 h-7 rounded-full" />
+        <Avatar :story="user.story" :src="user.avatar" className="w-8 h-8 rounded-full" />
       </div>
       <div class="flex flex-col">
         <a href="#" class="text-sm font-semibold">{{ user.username }}</a>
