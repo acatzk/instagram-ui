@@ -16,6 +16,9 @@ module.exports = {
       },
       width: {
         '156': '625px'
+      },
+      fontSize: {
+        xxs: '0.7rem'
       }
     },
   },
