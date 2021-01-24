@@ -22,20 +22,81 @@
         </div>
 
         <div class="border-0 sm:border border-gray-200 bg-white rounded-sm">
+          <!-- avatar & username -->
           <div class="flex items-center justify-between px-3 py-3">
             <div class="flex items-center space-x-2">
               <div class="flex-shrink-0">
                 <Avatar src="https://instagram.fdvo1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/133848590_3512747115487394_1195628481626511236_n.jpg?_nc_ht=instagram.fdvo1-1.fna.fbcdn.net&_nc_ohc=Cz_qEggCw9QAX_L_EHl&tp=1&oh=ceca47bfac919297937982718033a8b7&oe=603601FC" className="w-7 h-7 rounded-full" story/>
               </div>
-              <span class="text-sm font-medium">mchalvrz99</span>
+              <a href="#" class="text-sm font-medium">mchalvrz99</a>
             </div>
             <button class="focus:outline-none">
               <svg class="w-5 h-5 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
             </button>
           </div>
-          <div class="flex-shrink-0">
+          <!-- actual image -->
+          <div class="flex-shrink-0">.
             <img class="object-cover" src="https://instagram.fdvo1-1.fna.fbcdn.net/v/t51.2885-15/e35/141499020_791412515118046_6265868457552450723_n.jpg?_nc_ht=instagram.fdvo1-1.fna.fbcdn.net&amp;_nc_cat=110&amp;_nc_ohc=AF0XflYT-1AAX8Tv9hA&amp;tp=1&amp;oh=a97d50cba3c419e1d8679c489c6d4296&amp;oe=6036A0BD" alt="post-image" />
           </div>
+          <div class="space-y-2 pt-3">
+            <!-- heart, comments & share -->
+            <div class="flex items-center justify-between px-4">
+              <div class="flex items-center space-x-4">
+                <button class="focus:outline-none transition transform hover:scale-110 ease-in-out duration-75">
+                  <svg class="w-6 h-6 fill-current text-red-500" viewBox="0 0 48 48"><path d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+                </button>
+                <button class="focus:outline-none transition transform hover:scale-110 ease-in-out duration-75">
+                  <svg class="w-6 h-6 fill-current" viewBox="0 0 48 48" width="24"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg>
+                </button>
+                <button class="focus:outline-none transition transform hover:scale-110 ease-in-out duration-75">
+                  <svg class="w-6 h-6 fill-current" viewBox="0 0 48 48" width="24"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg>
+                </button>
+              </div>
+              <button class="focus:outline-none transition transform hover:scale-110 ease-in-out duration-75">
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 48 48" width="24"><path d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"></path></svg>
+              </button>
+            </div>
+            <!-- person who reacted -->
+            <div class="flex items-center space-x-1 px-4">
+              <a href="#">
+                <Avatar :className="`h-5 w-5 rounded-full`" src="https://instagram.fdvo1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/84064216_3082224618469048_6380949537762050048_n.jpg?_nc_ht=instagram.fdvo1-1.fna.fbcdn.net&_nc_ohc=px0ZpOnWawAAX_zhgTG&tp=1&oh=0866bb7fbcc4f3de4cb40dc938675d91&oe=60379698" />
+              </a>
+              <span class="text-sm font-normal tracking-tight">
+                Liked by <a href="#" class="font-semibold">iamshaznaye</a> and <a href="#" class="font-semibold">54 others</a>
+              </span>
+            </div>
+            <div class="space-y-1 flex flex-col border-b border-gray-100 px-4 pb-3">
+              <span class="text-sm font-normal tracking-tight">
+                <a href="#" class="font-semibold">mchalvrz99</a> Wine night
+              </span>
+              <a href="#" class="text-sm text-gray-400">View all 4 comments</a>
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-normal tracking-tight">
+                  <a href="#" class="font-semibold">nikkwooow</a> 
+                  <a href="#" class="text-light text-blue-500">@mchalvrz99</a> <a href="#" class="text-light text-blue-500">@enzowwww</a> haaaaiii salamat ❤️
+                </span>
+                <button class="focus:outline-none">
+                  <svg class="w-3 h-3" viewBox="0 0 48 48"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+                </button>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-normal tracking-tight">
+                  <a href="#" class="font-semibold">mchalvrz99</a> Hahaha kuya nikko 🤣🤦‍♀️
+                </span>
+                <button class="focus:outline-none">
+                  <svg class="w-3 h-3" viewBox="0 0 48 48"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+                </button>
+              </div>
+              <a href="#" class="uppercase text-xxs text-gray-400">21 hours ago</a>
+            </div>
+          </div>
+          <!-- form comments -->
+          <form class="flex items-center justify-between overflow-hidden">
+            <input type="text" placeholder="Add a comment..." class="w-full border-none focus:outline-none pl-4 py-4 text-sm">
+            <button class="py-3 block focus:outline-none px-4 text-sm font-medium text-blue-500">
+              Post
+            </button>
+          </form>
         </div>
       </div>
 
