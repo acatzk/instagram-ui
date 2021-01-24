@@ -117,11 +117,60 @@
           <span class="text-sm font-semibold text-gray-400">Suggestions For You</span>
           <a href="#" class="text-sm font-medium tracking-tight">See all</a>
         </div>
-        <ul>
-          <li v-for="(user, i) in suggested" :key="i">
-            <PopularUser :user="user"/>
-          </li>
-        </ul>
+        <div>
+          <ul>
+            <li v-for="(user, i) in suggested" :key="i">
+              <PopularUser :user="user"/>
+            </li>
+          </ul>
+        </div>
+        <div class="pt-6 space-y-1">
+          <ul class="flex items-center space-x-1">
+            <li class="text-xxs text-gray-300 flex items-center space-x-1">
+              <a href="#">About</a>
+              <span>&middot;</span>
+            </li>
+            <li class="text-xxs text-gray-300 flex items-center space-x-1">
+              <a href="#">Help</a>
+              <span>&middot;</span>
+            </li>
+            <li class="text-xxs text-gray-300 flex items-center space-x-1">
+              <a href="#">Press API</a>
+              <span>&middot;</span>
+            </li>
+            <li class="text-xxs text-gray-300 flex items-center space-x-1">
+              <a href="#">Jobs</a>
+              <span>&middot;</span>
+            </li>
+            <li class="text-xxs text-gray-300 flex items-center space-x-1">
+              <a href="#">Privacy</a>
+              <span>&middot;</span>
+            </li>
+            <li class="text-xxs text-gray-300 flex items-center space-x-1">
+              <a href="#">Terms</a>
+              <span>&middot;</span>
+            </li>
+          </ul>
+          <ul class="flex items-center space-x-1"> 
+            <li class="text-xxs text-gray-300 flex items-center space-x-1">
+              <a href="#">Locations</a>
+              <span>&middot;</span>
+            </li>
+            <li class="text-xxs text-gray-300 flex items-center space-x-1">
+              <a href="#">Top Accounts</a>
+              <span>&middot;</span>
+            </li>
+            <li class="text-xxs text-gray-300 flex items-center space-x-1">
+              <a href="#">Hashtags</a>
+              <span>&middot;</span>
+            </li>
+            <li class="text-xxs text-gray-300 flex items-center space-x-1">
+              <a href="#">Language</a>
+              <span>&middot;</span>
+            </li>
+          </ul>
+        </div>
+        <div class="pt-5 text-xxs uppercase text-gray-300">&copy; 2021 INSTAGRAM FROM FACEBOOK</div>
       </div>
 
     </div>
