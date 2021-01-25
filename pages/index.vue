@@ -35,7 +35,7 @@
             </button>
           </div>
           <!-- actual image -->
-          <div class="flex-shrink-0">.
+          <div class="flex-shrink-0">
             <img class="object-cover" src="https://instagram.fdvo1-1.fna.fbcdn.net/v/t51.2885-15/e35/141499020_791412515118046_6265868457552450723_n.jpg?_nc_ht=instagram.fdvo1-1.fna.fbcdn.net&amp;_nc_cat=110&amp;_nc_ohc=AF0XflYT-1AAX8Tv9hA&amp;tp=1&amp;oh=a97d50cba3c419e1d8679c489c6d4296&amp;oe=6036A0BD" alt="post-image" />
           </div>
           <div class="space-y-2 pt-3">
