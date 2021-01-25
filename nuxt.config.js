@@ -1,5 +1,6 @@
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
+  target: 'static',
   head: {
     title: 'instagram',
     meta: [
@@ -17,9 +18,10 @@ export default {
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [
-    '~/plugins/vue2-perfect-scrollbar.js'
-  ],
+  plugins: [{
+    src: '~/plugins/vue2-perfect-scrollbar.js',
+    mode: 'client'
+  }],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
